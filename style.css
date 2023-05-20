@@ -1,0 +1,91 @@
+.box{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80vh;
+    width: 80vb;
+    box-sizing: border-box;
+}
+
+.line-1, .line-2, .line-3{
+    width: 100%;
+    height: calc(80vh/3);
+}
+.line-1, .line-2{
+    border-bottom: 5px solid black;
+}
+
+.sq-1{
+    width: 32.4%;
+    height: inherit;
+    float: left;
+}
+.sq-2{
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    width: 33%;
+    height: inherit;
+    float: left;
+}
+.sq-3{
+    width: 33%;
+    height: inherit;
+    float: right;
+}
+
+
+
+/*  Todo: make the box center in all the different widths*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    .box{
+        height: 80vh;
+        width: 80vb;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and (max-width: 768px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .box{
+        top: 10%;
+        left: 10%;
+        right: 10%;
+        height: 80vh;
+        width: 80vb; 
+      }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .box{
+        top: 10%;
+        left: 18%;
+        height: 70vh;
+        width: 70vb;
+      }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .box{
+        top: 10%;
+        left: 10%;
+        right: 10%;
+        height: 80vh;
+        width: 80vb;
+      }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .box{
+        top: 10%;
+        left: 30%;
+        height: 80vh;
+        width: 80vb;
+      } 
+  }
